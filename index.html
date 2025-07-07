@@ -1,28 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>VidSpark — AI генератор контента</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VidSpark</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f0f0f;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        p {
+            font-size: 20px;
+            color: #ccc;
+        }
+        section {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .features {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .features h2 {
+            margin-top: 0;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin-bottom: 10px;
+            padding-left: 16px;
+            position: relative;
+        }
+        .features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00ffae;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 14px;
+            color: #666;
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>VidSpark</h1>
         <p>Создавай короткие видео за секунды с помощью ИИ</p>
     </header>
-    <main>
-        <section>
-            <h2>Что умеет VidSpark?</h2>
-            <ul>
-                <li>🎬 Генерация видео по тексту</li>
-                <li>🤖 Голос за кадром</li>
-                <li>📱 Форматы TikTok, Instagram, YouTube Shorts</li>
-            </ul>
-            <a href="#" class="btn">Скоро запуск!</a>
-        </section>
-    </main>
+    <section class="features">
+        <h2>Что умеет VidSpark?</h2>
+        <ul>
+            <li>Генерация видео по тексту</li>
+            <li>Создание видео по заголовку</li>
+            <li>Форматы TikTok, Instagram Reels, YouTube Shorts</li>
+            <li>Подбор фона, музыки и озвучки</li>
+            <li>Скоро: автопубликация в соцсети</li>
+        </ul>
+    </section>
     <footer>
-        <p>&copy; 2025 VidSpark.ai</p>
+        © 2025 VidSpark.ai
     </footer>
 </body>
 </html>
