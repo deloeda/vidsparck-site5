@@ -2,60 +2,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VidSparck — Тарифы</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>VidSparck - Тарифы</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>VidSparck</h1>
-    <p>Выбери подходящий тариф</p>
-  </header>
+    <div class="pricing-container">
+        <h1>VidSparck</h1>
+        <p>Выбери подходящий тариф</p>
 
-  <main>
-    <section class="plans">
-      <div class="plan">
-        <h2>Бесплатно</h2>
-        <p>10 видео в месяц</p>
-        <button onclick="selectPlan('free')">Выбрать</button>
-      </div>
-      <div class="plan">
-        <h2>Премиум</h2>
-        <p>100 видео в месяц</p>
-        <button onclick="selectPlan('premium')">Выбрать</button>
-      </div>
-      <div class="plan">
-        <h2>Безлимит</h2>
-        <p>Неограниченно</p>
-        <button onclick="selectPlan('unlimited')">Выбрать</button>
-      </div>
-    </section>
+        <div class="plan">
+            <h2>Бесплатно</h2>
+            <p>10 видео в месяц</p>
+            <button>Выбрать</button>
+        </div>
 
-    <section id="selected-plan">
-      <h3>Текущий тариф:</h3>
-      <p id="current-plan">не выбран</p>
-      <button onclick="clearPlan()">Сменить тариф</button>
-    </section>
-  </main>
+        <div class="plan">
+            <h2>Премиум</h2>
+            <p>100 видео в месяц</p>
+            <button>Выбрать</button>
+        </div>
 
-  <script>
-    function selectPlan(plan) {
-      localStorage.setItem("selectedPlan", plan);
-      updatePlanDisplay();
-    }
+        <div class="plan">
+            <h2>Безлимит</h2>
+            <p>Неограниченно</p>
+            <button>Выбрать</button>
+        </div>
 
-    function clearPlan() {
-      localStorage.removeItem("selectedPlan");
-      updatePlanDisplay();
-    }
-
-    function updatePlanDisplay() {
-      const plan = localStorage.getItem("selectedPlan");
-      document.getElementById("current-plan").textContent = plan ? plan : "не выбран";
-    }
-
-    window.onload = updatePlanDisplay;
-  </script>
+        <p>Текущий тариф: <strong>free</strong></p>
+        <button>Сменить тариф</button>
+    </div>
 </body>
 </html>

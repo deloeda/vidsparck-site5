@@ -1,67 +1,29 @@
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  background: #111;
-  color: white;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.centered {
-  text-align: center;
-  padding: 40px 20px;
+.pricing-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.side {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 24px;
-  background: gold;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-form {
-  margin-top: 20px;
-}
-
-input[type="text"] {
-  padding: 10px;
-  width: 60%;
-  max-width: 400px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 4px;
+.plan {
+    background-color: #222;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
 button {
-  padding: 10px 20px;
-  background: gold;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.limit {
-  margin-top: 10px;
-  color: #ccc;
-}
-
-footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #777;
+    background-color: #ff0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
