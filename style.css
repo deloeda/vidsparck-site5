@@ -13,10 +13,12 @@ body {
 .logo {
     font-size: 2.5em;
     margin-bottom: 10px;
+    text-align: center;
 }
 .tagline {
     font-size: 1.2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 .cta-button {
     background-color: orange;
@@ -25,6 +27,8 @@ body {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
 }
 .steps, .audience ul {
     margin-top: 30px;
@@ -53,4 +57,50 @@ h2 {
 .feature p, .advantage p {
     font-size: 1em;
     color: #ccc;
+}
+
+.signup {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.signup-subtext {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+.signup-form input {
+    padding: 12px;
+    font-size: 1em;
+    width: 60%;
+    max-width: 300px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.signup-form button {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.signup-form button:hover {
+    background-color: #ffa500;
+}
+
+/* выравнивание вторичных секций */
+.how-it-works .container,
+.audience .container,
+.features .container {
+    text-align: left;
+}
+
+.advantages .container,
+.signup .container {
+    text-align: center;
 }
