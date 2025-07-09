@@ -1,119 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Всё для клипов, ничего лишнего. VidSparck — создавай клипы быстро и просто." />
-    <title>VidSparck — Всё для клипов</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidSparck — AI монтаж клипов</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1 class="logo">VidSparck</h1>
-            <p class="tagline">Всё для клипов, ничего лишнего. VidSparck</p>
-            <a href="#" class="cta-button">Попробовать бесплатно</a>
-        </div>
-    </header>
+  <header class="hero">
+    <div class="container">
+      <h1 class="logo">VidSparck</h1>
+      <p class="tagline">Загрузи видео — получи готовый клип с помощью AI</p>
+      <a href="#chat" class="cta-button">Открыть чат</a>
+    </div>
+  </header>
 
-    <section class="signup">
-        <div class="container">
-            <h2>Ранний доступ</h2>
-            <p class="signup-subtext">Оставьте почту и получите доступ одним из первых:</p>
-            <form class="signup-form">
-                <input type="email" placeholder="Введите ваш email" required />
-                <button type="submit">Получить доступ</button>
-            </form>
+  <main>
+    <section id="chat" class="chat-section">
+      <div class="container">
+        <div class="chat-box">
+          <div class="chat-header">VidSparck AI</div>
+          <div class="chat-body">
+            <p>Привет! Я помогу тебе смонтировать клип, ответить на вопросы и проверить твой лимит 🎬</p>
+          </div>
+          <div class="chat-input">
+            <input type="text" placeholder="Напиши сообщение или прикрепи видео..." />
+            <button>Отправить</button>
+          </div>
         </div>
+        <div class="chat-info">
+          <h3>Твой лимит: <span class="limit-count">10</span> видео / месяц</h3>
+        </div>
+      </div>
     </section>
-
-    <section class="advantages">
-        <div class="container">
-            <h2>Почему VidSparck</h2>
-            <div class="advantages-list">
-                <div class="advantage">
-                    <h3>⚡️ Быстро</h3>
-                    <p>Создайте клип за 1 минуту — быстрее не бывает.</p>
-                </div>
-                <div class="advantage">
-                    <h3>🧩 Удобно</h3>
-                    <p>Ничего устанавливать не нужно. Всё работает прямо в браузере.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="how-it-works">
-        <div class="container">
-            <h2>Как это работает</h2>
-            <div class="steps">
-                <div class="step">1. Введите идею или выберите шаблон</div>
-                <div class="step">2. ИИ генерирует видео</div>
-                <div class="step">3. Скачайте и публикуйте</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <h2>Что умеет VidSparck</h2>
-            <div class="features-list">
-                <div class="feature">
-                    <h3>🎞 Генерация видео по тексту</h3>
-                    <p>Просто напиши идею — мы сделаем клип с титрами, музыкой и эффектами.</p>
-                </div>
-                <div class="feature">
-                    <h3>🧠 ИИ-редактор для TikTok / Reels</h3>
-                    <p>Автоматический монтаж под тренды, короткий формат и ритм музыки.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing">
-        <div class="container">
-            <h2>Тарифы</h2>
-            <div class="pricing-plans">
-                <div class="plan">
-                    <h3>Базовый</h3>
-                    <p class="price">0₽ / месяц</p>
-                    <ul>
-                        <li>5 видео в месяц</li>
-                        <li>Без водяных знаков</li>
-                        <li>Доступ к шаблонам</li>
-                    </ul>
-                </div>
-                <div class="plan">
-                    <h3>Pro</h3>
-                    <p class="price">499₽ / месяц</p>
-                    <ul>
-                        <li>Безлимитное количество видео</li>
-                        <li>Доступ к трендам TikTok/Reels</li>
-                        <li>Приоритетная генерация</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq">
-        <div class="container">
-            <h2>FAQ</h2>
-            <div class="faq-item">
-                <h3>Сколько времени занимает генерация видео?</h3>
-                <p>Обычно 30–60 секунд. Всё зависит от длины текста и шаблона.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Будет ли водяной знак?</h3>
-                <p>Нет, даже в бесплатной версии видео идут без водяного знака.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Какой формат видео?</h3>
-                <p>MP4 — оптимизировано под вертикальный формат 9:16 для TikTok, Reels и Shorts.</p>
-            </div>
-        </div>
-    </section>
-
+  </main>
 </body>
 </html>
