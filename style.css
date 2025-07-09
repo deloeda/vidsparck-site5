@@ -1,42 +1,67 @@
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+}
+
+.centered {
   text-align: center;
+  padding: 40px 20px;
+}
+
+.side {
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
 }
 
-header h1 {
-  color: #ffcc00;
-}
-
-.plans {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.plan {
-  background-color: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
-  width: 200px;
-}
-
-.plan h2 {
+h1 {
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
-.plan button {
-  background-color: #ffcc00;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
+.cta {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
-#selected-plan {
+form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.limit {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+footer {
   margin-top: 40px;
+  font-size: 14px;
+  color: #777;
 }
