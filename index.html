@@ -4,51 +4,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VidSparck — AI монтаж</title>
+  <title>VidSparck — Тарифы</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="centered">
+  <header>
     <h1>VidSparck</h1>
-    <p>Загрузи видео — получи готовый клип с помощью AI</p>
-    <a href="#chat" class="cta">Открыть чат</a>
+    <p>Выбери подходящий тариф</p>
   </header>
 
-  <section id="why" class="side">
-    <h2>Почему VidSparck?</h2>
-    <ul>
-      <li>Быстро и удобно</li>
-      <li>Без воды и сложностей</li>
-      <li>Монтаж за 30 секунд</li>
-    </ul>
-  </section>
+  <main>
+    <section class="plans">
+      <div class="plan">
+        <h2>Бесплатно</h2>
+        <p>10 видео в месяц</p>
+        <button onclick="selectPlan('free')">Выбрать</button>
+      </div>
+      <div class="plan">
+        <h2>Премиум</h2>
+        <p>100 видео в месяц</p>
+        <button onclick="selectPlan('premium')">Выбрать</button>
+      </div>
+      <div class="plan">
+        <h2>Безлимит</h2>
+        <p>Неограниченно</p>
+        <button onclick="selectPlan('unlimited')">Выбрать</button>
+      </div>
+    </section>
 
-  <section id="how" class="side">
-    <h2>Как это работает</h2>
-    <ol>
-      <li>Загрузи видео или вставь ссылку</li>
-      <li>AI смонтирует клип</li>
-      <li>Скачай и публикуй</li>
-    </ol>
-  </section>
+    <section id="selected-plan">
+      <h3>Текущий тариф:</h3>
+      <p id="current-plan">не выбран</p>
+      <button onclick="clearPlan()">Сменить тариф</button>
+    </section>
+  </main>
 
-  <section id="chat" class="centered">
-    <h2>VidSparck.AI</h2>
-    <p>Привет! Я помогу тебе смонтировать клип, ответив на вопросы или получив твой видос 🤖</p>
-    <form>
-      <input type="text" placeholder="Вставь ссылку или задай вопрос..." />
-      <button type="submit">Отправить</button>
-    </form>
-    <p class="limit">Твой лимит: 10 видео в месяц</p>
-  </section>
+  <script>
+    function selectPlan(plan) {
+      localStorage.setItem("selectedPlan", plan);
+      updatePlanDisplay();
+    }
 
-  <section id="plan" class="centered">
-    <h2>Тариф</h2>
-    <p>Бесплатно: 10 видео в месяц</p>
-  </section>
+    function clearPlan() {
+      localStorage.removeItem("selectedPlan");
+      updatePlanDisplay();
+    }
 
-  <footer class="centered">
-    <p>© 2025 VidSparck</p>
-  </footer>
+    function updatePlanDisplay() {
+      const plan = localStorage.getItem("selectedPlan");
+      document.getElementById("current-plan").textContent = plan ? plan : "не выбран";
+    }
+
+    window.onload = updatePlanDisplay;
+  </script>
 </body>
 </html>
