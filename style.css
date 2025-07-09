@@ -1,29 +1,62 @@
 
 body {
-    background-color: #111;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #111;
+  color: #fff;
+  font-size: 18px;
 }
-
-.pricing-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px 20px;
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
 }
-
-.plan {
-    background-color: #222;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+input, button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
 }
-
+input {
+  width: 80%;
+}
 button {
-    background-color: #ff0;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  background: orange;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.plan {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+.plan a {
+  display: inline-block;
+  margin-top: 10px;
+  background: yellow;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn {
+  background: yellow;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
