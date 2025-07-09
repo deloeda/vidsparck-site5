@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -7,7 +8,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 .logo {
     font-size: 2.5em;
@@ -26,30 +27,30 @@ body {
     border-radius: 5px;
 }
 .steps, .audience ul {
-    margin-top: 40px;
+    margin-top: 30px;
     list-style: none;
     padding: 0;
 }
 .step, .audience li {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 1.1em;
 }
 h2 {
     margin-bottom: 20px;
     color: orange;
 }
-.features-list {
-    margin-top: 30px;
+.features-list, .advantages-list {
+    margin-top: 25px;
 }
-.feature {
-    margin-bottom: 40px;
+.feature, .advantage {
+    margin-bottom: 30px;
 }
-.feature h3 {
+.feature h3, .advantage h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: orange;
 }
-.feature p {
+.feature p, .advantage p {
     font-size: 1em;
     color: #ccc;
 }
