@@ -2,51 +2,90 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VidSparck — Тарифы</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidSparck — Регистрация</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 60px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input {
+      padding: 15px;
+      font-size: 1.1em;
+      margin: 10px;
+      width: 300px;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      background: yellow;
+      color: black;
+      padding: 15px 30px;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .columns {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+    }
+    .card {
+      background: #222;
+      border-radius: 10px;
+      padding: 30px;
+      width: 280px;
+    }
+    .card h3 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 1em;
+      margin: 6px 0;
+    }
+  </style>
 </head>
 <body>
-  
-<div class="registration">
-  <h1 class="title">VidSparck</h1>
-  <form class="register-form">
-    <input type="email" placeholder="Введите почту" required />
-    <input type="password" placeholder="Введите пароль" required />
+  <h1>VidSparck</h1>
+  <form action="tariff.html">
+    <input type="email" placeholder="Почта" required /><br />
+    <input type="password" placeholder="Пароль" required /><br />
     <button type="submit">Зарегистрироваться</button>
   </form>
-</div>
-<div class="container">
-    <h1>VidSparck</h1>
-    <h2>Выбери подходящий тариф</h2>
-    <div class="tariffs">
-      <div class="tariff">
-        <h3>Базовый — 0 ₽</h3>
-        <ul>
-          <li>+ 10 видео в месяц</li>
-          <li>Без поддержки</li>
-          <li>Медленная обработка</li>
-        </ul>
-        <button>Выбрать</button>
-      </div>
-      <div class="tariff">
-        <h3>Pro — 449 ₽</h3>
-        <ul>
-          <li>+ 100 видео в месяц</li>
-          <li>Приоритетная очередь</li>
-          <li>Без личного менеджера</li>
-        </ul>
-        <button>Выбрать</button>
-      </div>
-      <div class="tariff">
-        <h3>Premium — 749 ₽</h3>
-        <ul>
-          <li>Безлимит видео</li>
-          <li>Приоритетная очередь</li>
-          <li>Личный менеджер</li>
-        </ul>
-        <button>Выбрать</button>
-      </div>
+
+  <div class="columns">
+    <div class="card">
+      <h3>Почему мы?</h3>
+      <p>Быстро и удобно</p>
+      <p>Без воды и сложностей</p>
+      <p>Монтаж за 30 секунд</p>
+    </div>
+    <div class="card">
+      <h3>Как это работает?</h3>
+      <p>Загрузи видео или вставь ссылку</p>
+      <p>AI смонтирует клип</p>
+      <p>Скачай и публикуй</p>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p>Что умеет VidSparck?</p>
+      <p>Как он работает?</p>
+      <p>Какие ограничения?</p>
     </div>
   </div>
 </body>

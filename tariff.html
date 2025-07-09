@@ -2,18 +2,81 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VidSparck — Тарифы</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 60px;
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+    .tariff-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .card {
+      background: #222;
+      padding: 40px 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+    .card h3 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+    .card button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: yellow;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>VidSparck</h1>
-    <p>Выбери подходящий тариф</p>
-    <div class="plans">
-      <div class="plan"><h2>Бесплатно</h2><p>10 видео в месяц</p><a href="home.html">Выбрать</a></div>
-      <div class="plan"><h2>Премиум</h2><p>100 видео в месяц</p><a href="home.html">Выбрать</a></div>
-      <div class="plan"><h2>Безлимит</h2><p>Неограниченно</p><a href="home.html">Выбрать</a></div>
+  <h1>VidSparck</h1>
+  <h2>Выбери подходящий тариф</h2>
+  <div class="tariff-cards">
+    <div class="card">
+      <h3>Базовый — 0 ₽</h3>
+      <p>+ 10 видео в месяц</p>
+      <p>Без поддержки</p>
+      <p>Медленная обработка</p>
+      <button>Выбрать</button>
+    </div>
+    <div class="card">
+      <h3>Pro — 449 ₽</h3>
+      <p>+ 100 видео в месяц</p>
+      <p>Приоритетная очередь</p>
+      <p>Без личного менеджера</p>
+      <button>Выбрать</button>
+    </div>
+    <div class="card">
+      <h3>Premium — 749 ₽</h3>
+      <p>Безлимит видео</p>
+      <p>Приоритетная очередь</p>
+      <p>Личный менеджер</p>
+      <button>Выбрать</button>
     </div>
   </div>
 </body>
