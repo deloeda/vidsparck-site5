@@ -2,63 +2,75 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0e0e0e;
+    background: #111;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     text-align: center;
-    flex-direction: column;
 }
 
 .container {
-    transform: translateY(-30px);
+    margin-top: 40px;
 }
 
-.white {
-    color: white;
+h1 {
+    font-size: 36px;
 }
 
-.orange {
-    color: #FFA500;
+.highlight {
+    color: orange;
 }
 
-.form {
-    margin: 20px 0;
-}
-
-input[type="email"],
-input[type="password"] {
-    padding: 10px;
+.form input {
+    padding: 12px;
     margin: 10px;
+    font-size: 16px;
     border-radius: 5px;
     border: none;
-    width: 200px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #FFD700;
+.form button {
+    padding: 12px 20px;
+    background: yellow;
+    color: black;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: black;
-    font-weight: bold;
 }
 
-.cards {
+.cards, .tariff-cards {
     display: flex;
-    gap: 20px;
     justify-content: center;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
 }
 
 .card {
-    background-color: #1a1a1a;
-    border: 2px solid;
-    border-image: linear-gradient(to right, orange, red) 1;
+    background: #000;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, orange, red) 1;
     padding: 20px;
-    border-radius: 15px;
-    width: 200px;
+    width: 220px;
+    border-radius: 10px;
+    color: white;
+}
+
+.card h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 6px 0;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

@@ -3,30 +3,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>VidSparck</title>
+    <title>VidSparck — Регистрация</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1><span class="white">Добро пожаловать в </span><span class="orange">VidSparck</span></h1>
-        <div class="form">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Пароль">
-            <button>Зарегистрироваться</button>
-        </div>
+        <h1><span class="highlight">Vid</span>Sparck</h1>
+        <form class="form">
+            <input type="email" placeholder="Почта" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit" onclick="window.location.href='tariffs.html'">Зарегистрироваться</button>
+        </form>
         <div class="cards">
-            <div class="card">
-                <h2>Почему мы?</h2>
-                <p>AI монтаж, скорость, результат</p>
-            </div>
-            <div class="card">
-                <h2>Как это работает?</h2>
-                <p>Загружаешь видео — получаешь готовый ролик</p>
-            </div>
-            <div class="card">
-                <h2>FAQ</h2>
-                <p>Ответы на популярные вопросы</p>
-            </div>
+            <div class="card"><h3>Почему мы?</h3><p>AI монтаж, скорость, результат</p></div>
+            <div class="card"><h3>Как это работает?</h3><p>Загружаешь видео — получаешь ролик</p></div>
+            <div class="card"><h3>FAQ</h3><p>Ответы на популярные вопросы</p></div>
         </div>
     </div>
 </body>
