@@ -9,9 +9,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 h1 {
@@ -26,44 +26,48 @@ h1 .highlight {
 .form {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
-    gap: 10px;
+    margin-bottom: 50px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 input[type="email"], input[type="password"] {
-    padding: 12px;
+    padding: 14px;
     width: 250px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
 button {
-    padding: 12px 20px;
+    padding: 14px 24px;
     background-color: #ffc107;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     color: #000;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .card {
-    background-color: #111;
-    padding: 20px;
-    width: 260px;
-    border-radius: 10px;
+    background-color: #1c1c1c;
+    padding: 24px;
+    width: 280px;
+    border-radius: 12px;
     border: 3px solid transparent;
-    background-clip: padding-box;
     position: relative;
     z-index: 1;
     text-align: left;
+    color: white;
 }
 
 .card::before {
@@ -73,7 +77,7 @@ button {
     right: -3px; bottom: -3px;
     background: linear-gradient(270deg, red, orange, yellow, red);
     background-size: 600% 600%;
-    border-radius: 12px;
+    border-radius: 15px;
     z-index: -1;
     animation: borderMove 6s linear infinite;
 }
@@ -85,6 +89,6 @@ button {
 }
 
 .card h2 {
-    color: #ffc107;
+    color: #ff8800;
     margin-bottom: 10px;
 }
