@@ -1,80 +1,81 @@
 
 body {
-    margin: 0;
+    background-color: #111;
+    color: white;
     font-family: Arial, sans-serif;
-    background-color: #0a0a0a;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    padding-top: 60px;
+    margin: 0;
+    padding: 0;
 }
-
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
     text-align: center;
 }
+h1 .white { color: white; }
+h1 .orange { color: #f90; }
 
-.highlight {
-    color: #ffc107;
+.register-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
 }
-
-.form {
-    margin-top: 20px;
-}
-
-input, button {
-    padding: 10px 15px;
-    margin: 10px 5px;
+.register-form input, .register-form button {
+    padding: 10px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    font-size: 1em;
+    border-radius: 4px;
 }
-
-input {
+.register-form input {
     width: 200px;
 }
-
-button {
+.register-form button {
     background-color: #ffc107;
+    color: black;
     cursor: pointer;
 }
 
 .cards {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
 }
-
 .card {
-    width: 240px;
+    background-color: #1a1a1a;
+    color: white;
     padding: 20px;
-    border-radius: 10px;
-    background-color: #000;
+    border-radius: 12px;
+    width: 250px;
+    height: 150px;
+    text-align: center;
     position: relative;
     z-index: 1;
 }
-
 .card::before {
     content: "";
     position: absolute;
-    top: -2px; left: -2px; right: -2px; bottom: -2px;
-    background: linear-gradient(270deg, red, orange, yellow, red);
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(270deg, #f90, #f00, #ff0, #f90);
     background-size: 600% 600%;
+    animation: animateBorder 5s linear infinite;
     z-index: -1;
-    border-radius: 12px;
-    animation: gradientBorder 8s ease infinite;
+    border-radius: 14px;
 }
-
-@keyframes gradientBorder {
+@keyframes animateBorder {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-}
-
-.card h3 {
-    margin: 0 0 10px;
-    color: orange;
 }
