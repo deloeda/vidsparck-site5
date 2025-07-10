@@ -9,7 +9,9 @@ body {
 }
 
 .container {
-    margin-top: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
 
 h1 {
@@ -53,14 +55,15 @@ button {
 }
 
 .card {
-    background-color: #222;
+    background-color: #111;
     padding: 20px;
-    width: 250px;
+    width: 260px;
     border-radius: 10px;
     border: 3px solid transparent;
     background-clip: padding-box;
     position: relative;
     z-index: 1;
+    text-align: left;
 }
 
 .card::before {
