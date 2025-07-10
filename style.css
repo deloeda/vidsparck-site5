@@ -71,3 +71,60 @@ body {
     color: orange;
     margin-bottom: 10px;
 }
+
+.tariff-page {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.centered-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 32px;
+    color: white;
+}
+
+.tariff-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.tariff-card {
+    background-color: #1e1e1e;
+    border: 2px solid orange;
+    border-radius: 12px;
+    padding: 20px 30px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+}
+
+.tariff-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: orange;
+}
+
+.tariff-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.tariff-card ul li {
+    margin-bottom: 8px;
+}
+
+.select-btn {
+    background-color: orange;
+    border: none;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
