@@ -1,71 +1,58 @@
 
-body {
-    margin: 0;
-    font-family: sans-serif;
+body.tariff-page {
     background-color: #111;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    min-height: 100vh;
-}
-
-.container {
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 50px;
+    padding: 40px 0;
 }
-
-.welcome {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.highlight {
-    color: orange;
-}
-
-.register-card {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-input {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 250px;
-    border: none;
-    border-radius: 5px;
-}
-
-button {
-    background-color: orange;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.cards {
+.tariff-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-top: 30px;
 }
-
-.card {
-    background-color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
+.tariff-card {
+    background-color: #1c1c1c;
+    padding: 20px 30px;
+    width: 260px;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, orange, orangered, gold) 1;
+    border-radius: 15px;
+    box-shadow: 0 0 10px orange;
+    text-align: left;
 }
-
-.neon-border {
-    box-shadow: 0 0 8px orange, 0 0 16px red;
+.tariff-card h2 {
+    text-align: center;
+    color: #ffcc00;
+}
+.tariff-card ul {
+    list-style: none;
+    padding: 0;
+}
+.tariff-card li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+.plus::before {
+    content: "+ ";
+    color: #00ff88;
+}
+.minus::before {
+    content: "- ";
+    color: #ff4444;
+}
+.tariff-card button {
+    display: block;
+    margin: 15px auto 0;
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px orange;
 }
