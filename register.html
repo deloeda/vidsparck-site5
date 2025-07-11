@@ -2,58 +2,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VidSparck — Регистрация</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      margin-top: 80px;
-    }
-    .form-box {
-      display: inline-block;
-      background-color: #1e1e1e;
-      padding: 40px;
-      border-radius: 12px;
-      border: 2px solid orange;
-    }
-    input {
-      display: block;
-      width: 250px;
-      margin: 15px auto;
-      padding: 10px;
-      font-size: 16px;
-    }
-    button {
-      background-color: orange;
-      border: none;
-      padding: 12px 30px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-    button:hover {
-      background-color: darkorange;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="form-box">
-      <h2>Регистрация</h2>
-      <form onsubmit="event.preventDefault(); window.location.href='tariffs.html';">
-        <input type="email" placeholder="Введите e-mail" required />
-        <input type="password" placeholder="Введите пароль" required />
-        <button type="submit">Зарегистрироваться</button>
-      </form>
+    <div class="register-container">
+        <h2>Регистрация</h2>
+        <form onsubmit="event.preventDefault(); window.location.href='plans.html';">
+            <input type="email" placeholder="Email" required><br>
+            <input type="password" placeholder="Пароль" required><br>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <div class="cards-container">
+            <div class="card">Почему мы?<br><span>AI монтаж, скорость, результат</span></div>
+            <div class="card">Как это работает?<br><span>Загружаешь видео — получаешь готовый ролик</span></div>
+            <div class="card">FAQ<br><span>Ответы на популярные вопросы</span></div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
