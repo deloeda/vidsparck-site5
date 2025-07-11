@@ -1,59 +1,68 @@
-
-body {
-  background-color: #111;
+body.dark-theme {
+  background: #0f0f0f;
   color: #fff;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
-.welcome {
-  font-size: 26px;
+
+.title {
   margin-top: 30px;
+  font-size: 28px;
 }
-.brand {
-  color: #ffc400;
+
+.highlight {
+  color: #ffc107;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  height: 100vh;
-}
+
 .card {
   background: #1a1a1a;
-  padding: 20px;
-  margin: 10px;
   border-radius: 10px;
-  width: 280px;
-  box-shadow: 0 0 15px #ff8c00;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 250px;
 }
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.register-card {
+  width: 300px;
+  margin: 20px auto;
+}
+
 input {
-  display: block;
+  padding: 8px;
+  margin: 8px 0;
   width: 90%;
-  margin: 10px auto;
-  padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
-button {
-  background-color: orange;
-  color: white;
+
+.button-orange {
+  background: orange;
+  color: black;
   border: none;
   padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
-  cursor: pointer;
 }
-.info-cards {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 .neon-border {
-  border: 2px solid #ff6a00;
-  box-shadow: 0 0 8px #ff6a00, 0 0 15px #ff6a00;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, orange, red, yellow) 1;
+  animation: neon 2s infinite linear;
+}
+
+@keyframes neon {
+  0% { border-image: linear-gradient(45deg, orange, red, yellow) 1; }
+  50% { border-image: linear-gradient(45deg, red, yellow, orange) 1; }
+  100% { border-image: linear-gradient(45deg, orange, red, yellow) 1; }
 }

@@ -1,35 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>VidSparck — Регистрация</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="container">
-    <h1 class="welcome">Добро пожаловать в <span class="brand">VidSparck</span></h1>
-    <div class="card neon-border">
-      <h2>Регистрация</h2>
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Пароль" />
-      <button onclick="location.href='tarif.html'">Зарегистрироваться</button>
-    </div>
-    <div class="info-cards">
-      <div class="card neon-border">
-        <h3>Почему мы?</h3>
-        <p>AI монтаж, скорость, результат</p>
-      </div>
-      <div class="card neon-border">
-        <h3>Как это работает?</h3>
-        <p>Загружаешь видео — получаешь готовый ролик</p>
-      </div>
-      <div class="card neon-border">
-        <h3>FAQ</h3>
-        <p>Ответы на популярные вопросы</p>
-      </div>
-    </div>
+<body class="dark-theme">
+  <h1 class="title">Добро пожаловать в <span class="highlight">VidSparck</span></h1>
+  <div class="card neon-border register-card">
+    <h2>Регистрация</h2>
+    <form action="plans.html" method="get">
+      <input type="email" placeholder="Email" required><br>
+      <input type="password" placeholder="Пароль" required><br>
+      <button type="submit" class="button-orange">Зарегистрироваться</button>
+    </form>
+  </div>
+
+  <div class="card-container">
+    <div class="card neon-border"><h3>Почему мы?</h3><p>AI монтаж, скорость, результат</p></div>
+    <div class="card neon-border"><h3>Как это работает?</h3><p>Загружаешь видео — получаешь готовый ролик</p></div>
+    <div class="card neon-border"><h3>FAQ</h3><p>Ответы на популярные вопросы</p></div>
   </div>
 </body>
 </html>
