@@ -1,88 +1,69 @@
 
 body {
-  margin: 0;
-  padding: 0;
-  background: #111;
-  font-family: sans-serif;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
-  text-align: center;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.welcome {
-  margin-bottom: 20px;
-  font-size: 28px;
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
-.highlight {
-  color: #ffcc00;
+.card, .info-card, .tariff-card {
+    background-color: #111;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 320px;
 }
 
-.card.registration {
-  background: #222;
-  padding: 20px;
-  border-radius: 12px;
-  border: 2px solid #ffaa00;
-  margin-bottom: 30px;
-  display: inline-block;
+input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
 }
 
-.card.registration input {
-  display: block;
-  width: 250px;
-  margin: 10px auto;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-}
-
-.card.registration button {
-  padding: 10px 20px;
-  border: none;
-  background: orange;
-  color: #000;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.card-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #000;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 220px;
-  text-align: center;
-}
-
-.card h3 {
-  color: #ffcc00;
+button {
+    background-color: #ff6600;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .neon {
-  border: 2px solid;
-  border-image: linear-gradient(45deg, orange, red, yellow) 1;
-  animation: pulse-border 2s infinite;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, orange, red, yellow) 1;
+    animation: glow 2s linear infinite;
 }
 
-@keyframes pulse-border {
-  0% { border-image-slice: 1; }
-  50% { border-image-slice: 1; }
-  100% { border-image-slice: 1; }
+@keyframes glow {
+    0% { border-image: linear-gradient(45deg, orange, red, yellow) 1; }
+    50% { border-image: linear-gradient(45deg, red, yellow, orange) 1; }
+    100% { border-image: linear-gradient(45deg, yellow, orange, red) 1; }
+}
+
+.info-cards, .tariff-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }

@@ -1,66 +1,59 @@
 
 body {
+  background-color: #111;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: white;
+  padding: 0;
+}
+.welcome {
+  font-size: 26px;
+  margin-top: 30px;
+}
+.brand {
+  color: #ffc400;
+}
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  padding-top: 50px;
+  height: 100vh;
 }
-
-.welcome {
-  font-size: 2.2em;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.tariffs-container {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.tariff-card {
-  background-color: #1a1a1a;
-  border: 2px solid;
-  border-image: linear-gradient(45deg, orange, red, yellow) 1;
-  padding: 20px 30px;
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 10px;
   border-radius: 10px;
-  text-align: center;
-  min-width: 220px;
-  transition: transform 0.3s;
+  width: 280px;
+  box-shadow: 0 0 15px #ff8c00;
 }
-
-.tariff-card:hover {
-  transform: scale(1.05);
+input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
-
-.tariff-card h2 {
-  color: orange;
-  margin-bottom: 15px;
-}
-
-.tariff-card ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-
-.tariff-card li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.choose-button {
+button {
   background-color: orange;
+  color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
-  color: #000;
-  cursor: pointer;
+  font-weight: bold;
   border-radius: 5px;
+  cursor: pointer;
+}
+.info-cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.neon-border {
+  border: 2px solid #ff6a00;
+  box-shadow: 0 0 8px #ff6a00, 0 0 15px #ff6a00;
 }
