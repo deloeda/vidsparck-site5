@@ -2,23 +2,58 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>VidSparck - Регистрация</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VidSparck — Регистрация</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-top: 80px;
+    }
+    .form-box {
+      display: inline-block;
+      background-color: #1e1e1e;
+      padding: 40px;
+      border-radius: 12px;
+      border: 2px solid orange;
+    }
+    input {
+      display: block;
+      width: 250px;
+      margin: 15px auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      background-color: orange;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    button:hover {
+      background-color: darkorange;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Добро пожаловать в <span class="highlight">VidSparck</span></h1>
-        <form class="form">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Пароль" required>
-            <button type="submit">Зарегистрироваться</button>
-        </form>
-        <div class="cards">
-            <div class="card"><h3>Почему мы?</h3><p>AI монтаж, скорость, результат</p></div>
-            <div class="card"><h3>Как это работает?</h3><p>Загружаешь видео — получаешь готовый ролик</p></div>
-            <div class="card"><h3>FAQ</h3><p>Ответы на популярные вопросы</p></div>
-        </div>
+  <div class="container">
+    <div class="form-box">
+      <h2>Регистрация</h2>
+      <form onsubmit="event.preventDefault(); window.location.href='tariffs.html';">
+        <input type="email" placeholder="Введите e-mail" required />
+        <input type="password" placeholder="Введите пароль" required />
+        <button type="submit">Зарегистрироваться</button>
+      </form>
     </div>
+  </div>
 </body>
 </html>
